@@ -1,0 +1,70 @@
+{
+  "type": "application",
+  "title": "Kitchen",
+  "version": "1.0.0",
+  "initialRoute": "/kitchen",
+  "routes": {
+    "/kitchen": "ui://pages/kitchen"
+  },
+  "theme": {
+    "mode": "dark",
+    "color": {
+      "primary": "#d97706",
+      "onPrimary": "#ffffff",
+      "primaryContainer": "#3a2a10",
+      "onPrimaryContainer": "#ffe6c2",
+      "surface": "#171c22",
+      "onSurface": "#eef3f7",
+      "surfaceContainerHighest": "#0d1116",
+      "onSurfaceVariant": "#8d9aa6",
+      "outline": "#242d36",
+      "outlineVariant": "#242d36",
+      "error": "#b3261e",
+      "onError": "#ffffff",
+      "warning": "#e0a33c",
+      "onWarning": "#ffffff",
+      "inverseSurface": "#eef3f7",
+      "inverseOnSurface": "#171c22"
+    },
+    "spacing": {
+      "xxs": 2,
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48
+    },
+    "shape": {
+      "none": 0,
+      "extraSmall": 4,
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "extraLarge": 28,
+      "full": 999
+    },
+    "fonts": {
+      "JetBrainsMono": {
+        "source": "asset",
+        "family": "JetBrainsMono"
+      }
+    }
+  },
+  "state": {
+    "initial": {
+      "rows": [],
+      "station": "",
+      "openCount": 0,
+      "madeCount": 0,
+      "headline": "",
+      "nextLabel": "",
+      "passRule": ""
+    }
+  },
+  "onInit": {
+    "type": "tool",
+    "tool": "kitchen.open",
+    "params": {}
+  }
+}
